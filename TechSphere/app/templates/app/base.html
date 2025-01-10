@@ -50,9 +50,8 @@
                         </li>
                     </ul>
                     <!-- Form wyszukiwania -->
-                    <form class="d-flex ms-auto">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-dark" type="submit">Search</button>
+                    <form class="d-flex ms-auto" id="search-form">
+                        <input class="form-control me-2" type="search" id="search-input" placeholder="Search" aria-label="Search">
                     </form>
                     <!-- Jeśli użytkownik jest zalogowany -->
                     <ul class="navbar-nav ms-auto">
@@ -67,12 +66,32 @@
                                 <li><a class="dropdown-item" href="#">Logout</a></li>
                             </ul>
                         </li>
+                        <li class="nav-item ms-auto">
+                            <a href="#" class=nav-link text-white>Cart</a>
+                        </li>
+                        <li class="nav-item ms-auto">
+                            <a href="#" class=nav-link text-white>Whishlist</a>
+                        </li>
+                        <li class="nav-item ms-auto">
+                            <a href="#" class=nav-link text-white>Login</a>
+                        </li>
+                        <li class="nav-item ms-auto">
+                            <a href="#" class=nav-link text-white>Registration</a>
+                        </li>
                     </ul>
                 </div>
             </div>
         </nav>
 
-        <div class="container mt-5 pt-5">
+
+        <div class="content-wrapper-slider">
+            {% block banner-slider %}
+
+            {% endblock banner-slider %}
+        </div>
+
+
+        <div class="container mt-4 pt-4">
             {% block main-content %}
             <!-- Main content will be rendered here -->
             {% endblock %}

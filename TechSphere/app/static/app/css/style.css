@@ -1,2 +1,62 @@
 /* ----------------------------- nav ------------------------------*/ 
+/* ----------------------------- banner-slider ------------------------------*/ 
 
+.content-wrapper-slider img {
+    width: 100%; 
+    height: 35rem;  
+    display: block; 
+    object-fit: cover;
+}
+
+.content-wrapper-slider {
+    padding-top: 5rem; 
+}
+
+/* Media query dla ekranów o szerokości mniejszej niż 920px */
+@media (max-width: 1500px) {
+    .content-wrapper-slider img {
+        width: 100%; 
+        height: 30rem;
+        display: block; 
+        object-fit: cover;
+    }
+}
+
+/* Media query dla ekranów o szerokości mniejszej niż 920px */
+@media (max-width: 1200px) {
+    .content-wrapper-slider img {
+        width: 100%; 
+        height: 25rem;
+        display: block; 
+        object-fit: cover;
+    }
+}
+
+/* Media query dla ekranów o szerokości mniejszej niż 920px */
+@media (max-width: 900px) {
+    .content-wrapper-slider img {
+        width: 100%; 
+        height: 20rem;
+        display: block; 
+        object-fit: cover;
+    }
+}
+
+/* Media query dla ekranów o szerokości mniejszej niż 920px */
+@media (max-width: 600px) {
+    .content-wrapper-slider img {
+        width: 100%; 
+        height: 15rem;
+        display: block; 
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 450px) {
+    .content-wrapper-slider img {
+        width: 100%; 
+        height: 10rem;
+        display: block; 
+        object-fit: cover;
+    }
+}
